@@ -1,0 +1,9 @@
+.header__text {
+  margin-left: 50px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #123b9e;
+}
+.header__text:first-child {
+  margin: 0;
+}
