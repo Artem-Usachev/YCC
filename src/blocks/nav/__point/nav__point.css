@@ -1,0 +1,9 @@
+.nav__point {
+    width: 10px;
+    height: 10px;
+    margin: 0 24px 0 0;
+}
+
+.nav__point:last-child {
+    margin: 0;
+}

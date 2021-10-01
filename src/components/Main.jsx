@@ -1,5 +1,4 @@
-import React from "react";
-import spaceBackground from "../images/headerBackground.png";
+import React  ,{useState, useEffect} from "react";
 import spaceBublle1 from "../images/headerSpace.png";
 import children from "../images/children.png";
 import club1 from "../images/club1.jpg";
@@ -7,23 +6,36 @@ import club2 from "../images/club2.jpg";
 import club3 from "../images/club3.jpg";
 import club4 from "../images/club4.jpg";
 import Card from "./Card";
+import arrorRight from "../images/arrowR.svg";
+import arrorLeft from "../images/arrowL.svg";
+import ellipse from '../images/Ellipse.svg';
+import Slider from "./Slider";
+import {heroes,teachers , mainTeachers} from "../utils/teacher";
 const Main = () => {
+  const img = [
+    <img className="club__illustration" key={club1} src={club1} />,
+    <img className="club__illustration" key={club2} src={club2} />,
+    <img className="club__illustration" key={club3} src={club3} />,
+    <img className="club__illustration" key={club4} src={club4} />]
+    
+
+
   return (
     <>
       <section className="main">
-        <img className="illustration" src={spaceBackground} />
-        <img className="illustration" src={spaceBublle1} />
-        <img className="illustration" src={children} />
+        <div className="main__background"></div>
+        <img className="illustration" src={spaceBublle1} id='spaceBublle1' alt='иллюстрация'/>
+        <img className="illustration" src={children} id='children' alt='иллюстрация'/>
         <h1 className="main__title">Юношеский Клуб Космонавтики</h1>
-        <button className="main__button">Записаться</button>
+        <button className="main__button"><p className="main__button-text"> Записаться</p></button>
       </section>
-      <section className="club">
+       <section className="club">
         <h2 className="club__title">О Клубе</h2>
         <div className="club__content">
           <div className="club__text-box">
             <p className="club__text">
-              В клуб принимаются учащиеся 7-10 классов (обучение на бюджетной
-              основе). Комплексная образовательная программа клуба рассчитана на
+              В клуб принимаются учащиеся <span className="club__span">7-10 классов (обучение на бюджетной
+              основе).</span> Комплексная образовательная программа клуба рассчитана на
               3 года. По окончании учащиеся получают «Свидетельство о
               дополнительном образовании».
             </p>
@@ -40,32 +52,31 @@ const Main = () => {
             <p className="club__text">
               Для школьных команд 6-7 классов Юношеский Клуб космонавтики в
               апреле проводит ежегодную познавательную игру по станциям
-              «Космос». Заявки на игру принимаются по тел.: 407 43 55. Участие
-              бесплатное
+              «Космос». <span className="club__span">Заявки на игру принимаются по тел.: 407 43 55. Участие
+              бесплатное</span>
             </p>
           </div>
-          <div className="club__media-box">
-            <img className="club__illustration" src={club1} />
-            <img className="club__illustration" src={club2} />
-            <img className="club__illustration" src={club3} />
-            <img className="club__illustration" src={club4} />
+          <div className=" club__media-nav-box" >
+           <Slider mediaArray={img}/>
+            {/* <video className="club__video" />
             <video className="club__video" />
             <video className="club__video" />
-            <video className="club__video" />
-            <video className="club__video" />
-          </div>
+            <video className="club__video" /> */}
+         
           <div className="nav">
-            <img className="nav__point" />
-            <img className="nav__point" />
-            <img className="nav__point" />
-            <img className="nav__point" />
-            <img className="nav__point" />
-            <img className="nav__point" />
-            <img className="nav__point" />
-            <img className="nav__point" />
+            <img className="nav__point" alt='иллюстрация' src={ellipse}/>
+            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
+            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
+            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
+            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
+            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
+            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
+            <img className="nav__point"alt='иллюстрация' src={ellipse}/>
+          </div>
           </div>
         </div>
       </section>
+     
       <section className="history">
         <h2 className="history__title">Наша история и гордость</h2>
         <p className="history__subtitle">
@@ -76,36 +87,47 @@ const Main = () => {
           А.И. Борисенко – Герой России, летчик-космонавт, А.Г. Храмов – Герой
           России, капитан 1 ранга, акванавт
         </p>
-        <Card />
-        <img className="illustration" />
-        <img className="illustration" />
-        <img className="illustration" />
-        <div className="history__media-box">
+        <div className="cards">
+                    {heroes.map((card)=>{
+                      return <Card
+                            data={card}/>
+                    })}
+                        </div>
+                  
+       <Slider mediaArray={img}/>
+        {/* <div className="history__media-box">
           <video className="history__video" />
           <video className="history__video" />
           <video className="history__video" />
-        </div>
+        </div> */}
         <div className="nav">
-          <img className="nav__point" />
-          <img className="nav__point" />
-          <img className="nav__point" />
-        </div>
-        <img className="history__arrow history__arrow_left" />
-        <img className="history__arrow history__arrow_right" />
+            <img className="nav__point" alt='иллюстрация' src={ellipse}/>
+            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
+            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
+          </div>
+        <img className="history__arrow history__arrow_left" alt='иллюстрация' src={arrorRight}/>
+        <img className="history__arrow history__arrow_right" alt='иллюстрация'src={arrorLeft}/>
       </section>
       <section className="teachers">
         <h2 className="teachers__title">Педагоги</h2>
         <div className="teachers__card-box">
           <div className="teachers__main-card-box">
-            <Card />
+          <div className="cards">
+                    {mainTeachers.map((card)=>{
+                      return <Card
+                            data={card}/>
+                    })}
+                        </div>
+                        <div className="cards">
+                    {teachers.map((card)=>{
+                      return <Card
+                            data={card}/>
+                    })}
+                        </div>
           </div>
-          <Card />
+         
         </div>
-        <img className="illustration" />
-        <img className="illustration" />
-        <img className="illustration" />
-        <img className="illustration" />
-      </section>
+      </section> {/*
       <section className="courses">
         <h2 className="courses__title">Курсы</h2>
         <ul className="courses__text-box">
@@ -179,9 +201,9 @@ const Main = () => {
           <video className="courses__video" />
         </div>
         <div className="nav">
-          <img className="nav__point" />
-          <img className="nav__point" />
-          <img className="nav__point" />
+          <img className="nav__point" alt='иллюстрация'src={ellipse}/>
+          <img className="nav__point" alt='иллюстрация'src={ellipse}/>
+          <img className="nav__point" alt='иллюстрация'src={ellipse}/>
         </div>
       </section>
       <section className="contacts">
@@ -221,8 +243,8 @@ const Main = () => {
             </p>
           </li>
         </ul>
-        <img className="illustration" />
-      </section>
+       
+      </section> */}
     </>
   );
 };

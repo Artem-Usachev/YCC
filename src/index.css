@@ -1,17 +1,36 @@
+@import url(./vendor/normalize.css);
 @import url(./vendor/font.css);
 @import url(./blocks/page/page.css);
+
 /* header */
+
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__bar/header__bar.css);
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/header/__menu/header__menu.css);
 @import url(./blocks/header/__nav/header__nav.css);
 @import url(./blocks/header/__text/header__text.css);
+
 /* main */
+
 @import url(./blocks/main/main.css);
 @import url(./blocks/main/__button/main__button.css);
 @import url(./blocks/main/__title/main__title.css);
+@import url(./blocks/main/__button-text/main__button-text.css);
+@import url(./blocks/main/__background/main__background.css);
+
+/*  */
+
+@import url(./blocks/cards/cards.css);
+
+/*  */
+
+@import url(./blocks/card/card.css);
+@import url(./blocks/card/__illustration/card__illustration.css);
+@import url(./blocks/card/__title/card__title.css);
+
 /* club */
+
 @import url(./blocks/club/club.css);
 @import url(./blocks/club/__content/club__content.css);
 @import url(./blocks/club/__illustration/club__illustration.css);
@@ -20,14 +39,21 @@
 @import url(./blocks/club/__text/club__text.css);
 @import url(./blocks/club/__title/club__title.css);
 @import url(./blocks/club/__video/club__video.css);
+@import url(./blocks/club/__media-nav-box/club__media-nav-box.css);
+@import url(./blocks/club/__span/club__span.css);
+@import url(./blocks/club/__backdrop/club__backdrop.css);
+
 /*  */
+
 @import url(./blocks/contacts/contacts.css);
 @import url(./blocks/contacts/__point/contacts__point.css);
 @import url(./blocks/contacts/__semi-title/contacts__semi-title.css);
 @import url(./blocks/contacts/__text-box/contacts__text-box.css);
 @import url(./blocks/contacts/__text/contacts__text.css);
 @import url(./blocks/contacts/__title/contacts__title.css);
+
 /*  */
+
 @import url(./blocks/courses/courses.css);
 @import url(./blocks/courses/__media-box/courses__media-box.css);
 @import url(./blocks/courses/__point/courses__point.css);
@@ -37,7 +63,9 @@
 @import url(./blocks/courses/__title/courses__title.css);
 @import url(./blocks/courses/__ul-box/courses__ul-box.css);
 @import url(./blocks/courses/__video/courses__video.css);
+
 /*  */
+
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__link-img/footer__link-img.css);
 @import url(./blocks/footer/__link-text/footer__link-text.css);
@@ -45,14 +73,18 @@
 @import url(./blocks/footer/__social-point/footer__social-point.css);
 @import url(./blocks/footer/__social/footer__social.css);
 @import url(./blocks/footer/__title/footer__title.css);
+
 /*  */
+
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__bar/header__bar.css);
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/header/__menu/header__menu.css);
 @import url(./blocks/header/__nav/header__nav.css);
 @import url(./blocks/header/__text/header__text.css);
+
 /*  */
+
 @import url(./blocks/history/history.css);
 @import url(./blocks/history/__arrow/_type/history__arrow_left.css);
 @import url(./blocks/history/__arrow/_type/history__arrow_right.css);
@@ -61,14 +93,151 @@
 @import url(./blocks/history/__subtitle/history__subtitle.css);
 @import url(./blocks/history/__title/history__title.css);
 @import url(./blocks/history/__video/history__video.css);
+
 /*  */
+
 @import url(./blocks/illustration/illustration.css);
+
 /*  */
+
 @import url(./blocks/nav/nav.css);
 @import url(./blocks/nav/__point/nav__point.css);
 @import url(./blocks/teachers/__title/teachers__title.css);
 @import url(./blocks/teachers/__card-box/teachers__card-box.css);
 @import url(./blocks/teachers/__main-card-box/teachers__main-card-box.css);
 @import url(./blocks/teachers/teachers.css);
+
 /*  */
+
 @import url(./blocks/title/title.css);
+#cloud1 {
+    position: absolute;
+    width: 319px;
+    height: 654px;
+    left: 0px;
+    top: 1696px;
+    z-index: -10;
+}
+
+#cloud2 {
+    position: absolute;
+    width: 279px;
+    height: 589px;
+    right: 0;
+    top: 2649px;
+    z-index: -10;
+}
+
+#cloud3 {
+    position: absolute;
+    width: 468px;
+    height: 830px;
+    right: 0;
+    top: 3804px;
+    z-index: -10;
+}
+
+#cloud4 {
+    position: absolute;
+    width: 423px;
+    height: 731px;
+    left: 0px;
+    top: 4127px;
+    z-index: -10;
+}
+
+#cloud5 {
+    position: absolute;
+    width: 579px;
+    height: 586px;
+    right: 0;
+    top: 4974px;
+    z-index: -10;
+}
+
+#cloud6 {
+    position: absolute;
+    width: 631px;
+    height: 513px;
+    left: 0px;
+    top: 5832px;
+    z-index: -10;
+}
+
+#spaceBackground {
+    position: absolute;
+    width: 789px;
+    height: 1016px;
+    right: 0px;
+    top: 0px;
+    z-index: -10;
+}
+
+#earth {
+    position: absolute;
+    width: 100%;
+    height: 47vh;
+    left: 0px;
+    right: 0px;
+    top: 7106px;
+    z-index: -10;
+}
+
+#children {
+    position: absolute;
+    width: 526px;
+    height: 509px;
+    left: 770px;
+    top: 454px;
+    z-index: -10;
+}
+
+#spaceBublle1 {
+    position: absolute;
+    width: 171px;
+    height: 249px;
+    left: 0px;
+    top: 749px;
+    z-index: -10;
+}
+
+#rocket {
+    position: absolute;
+    width: 222px;
+    height: 496px;
+    left: 100px;
+    top: 1964px;
+    z-index: -10;
+}
+
+#buble {
+    position: absolute;
+    width: 259px;
+    height: 383px;
+    left: 81px;
+    top: 4182px;
+    z-index: -10;
+}
+
+p {
+    /**
+     * Для эксплорера
+     */
+    -ms-user-select: none;
+    /**
+     * Для мозилы
+     */
+    -moz-user-select: none;
+    /**
+     * Для конкверора
+     */
+    -khtml-user-select: none;
+    /**
+     * Для Сафари и Хрома
+     */
+    -webkit-user-select: none;
+}
+
+button:focus {
+    outline: 0
+}

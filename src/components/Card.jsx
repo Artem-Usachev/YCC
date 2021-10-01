@@ -1,9 +1,12 @@
 import React from "react";
-const Card = ({ img, title }) => {
+
+const Card = ( {data} ) => {
+  console.log(data.link)
   return (
     <div className="card">
-      <img className="card__illustration" src={img} alt={title} />
-      <h3 className="card__title">{title}</h3>
+          <div className="club__backdrop"></div>
+      <img className="card__illustration" src={data.link} alt={data.name} />
+      <h3 className="card__title">{data.name}</h3>
     </div>
   );
 };

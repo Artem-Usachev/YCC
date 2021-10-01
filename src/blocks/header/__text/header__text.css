@@ -1,9 +1,31 @@
 .header__text {
-  margin-left: 50px;
-  font-size: 21px;
-  font-weight: bold;
-  color: #123b9e;
+    margin-left: 50px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #123b9e;
 }
+
+.header__text:active {
+    border-bottom: 1px solid #123B9E;
+}
+
 .header__text:first-child {
-  margin: 0;
+    margin: 0;
+    border-bottom: 1px solid #123B9E;
+}
+
+.header__text:nth-child(3n) {
+    color: white;
+}
+
+.header__text:nth-child(4n) {
+    color: white;
+}
+
+.header__text:nth-child(5n) {
+    color: white;
+}
+
+.header__text:last-child {
+    margin-right: 210px;
 }

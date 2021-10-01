@@ -1,0 +1,22 @@
+.main__button {
+    position: absolute;
+    width: 347px;
+    height: 66px;
+    left: 297px;
+    top: 764px;
+    background: linear-gradient(0deg, rgba(3, 106, 168, 0.57), rgba(3, 106, 168, 0.57)), #123B9E;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.8s ease-out;
+    outline: none;
+}
+
+.main__button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 4px 10px rgba(34, 15, 74, 0.5);
+}
+
+.main__button:active {
+    opacity: 0.8;
+}

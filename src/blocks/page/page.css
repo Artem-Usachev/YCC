@@ -1,8 +1,11 @@
 .page {
-  min-width: 320px;
-  max-width: 1920px;
-  font-family: Roboto;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    min-width: 320px;
+    position: relative;
+    font-family: Roboto;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    color: #123B9E;
+    outline: none;
 }

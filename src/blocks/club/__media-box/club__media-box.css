@@ -1,0 +1,21 @@
+.club__media-box {
+    width: 764px;
+    height: 538px;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.club__media-box:hover .slider-img {
+    transform: scale(1.1);
+}
+
+.club__media-box:hover .club__backdrop {
+    cursor: pointer;
+    opacity: 0.3;
+    z-index: 10;
+}
