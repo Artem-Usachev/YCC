@@ -1,9 +1,9 @@
 .main__background {
-    background-image: url(../../../images/headerBackground.png);
-    width: 789px;
-    height: 1016px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -10;
+  background-image: url(../../../images/kosmos_osnovnaya_chast.png);
+  width: 789px;
+  height: 1016px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -10;
 }

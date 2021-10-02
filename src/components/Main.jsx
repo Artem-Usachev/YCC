@@ -1,4 +1,4 @@
-import React  ,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import spaceBublle1 from "../images/headerSpace.png";
 import children from "../images/children.png";
 import club1 from "../images/club1.jpg";
@@ -8,36 +8,61 @@ import club4 from "../images/club4.jpg";
 import Card from "./Card";
 import arrorRight from "../images/arrowR.svg";
 import arrorLeft from "../images/arrowL.svg";
-import ellipse from '../images/Ellipse.svg';
+import ellipse from "../images/Ellipse.svg";
 import Slider from "./Slider";
-import {heroes,teachers , mainTeachers} from "../utils/teacher";
+import { heroes, teachers, mainTeachers } from "../utils/teacher";
 const Main = () => {
   const img = [
     <img className="club__illustration" key={club1} src={club1} />,
     <img className="club__illustration" key={club2} src={club2} />,
     <img className="club__illustration" key={club3} src={club3} />,
-    <img className="club__illustration" key={club4} src={club4} />]
-    
-
+    <img className="club__illustration" key={club4} src={club4} />,
+  ];
 
   return (
     <>
       <section className="main">
-        <div className="main__background"></div>
-        <img className="illustration" src={spaceBublle1} id='spaceBublle1' alt='иллюстрация'/>
-        <img className="illustration" src={children} id='children' alt='иллюстрация'/>
+        <div className="main__background">
+          <div className="main__background-shell">
+            <div className="main__stars_first"></div>
+            <div className="main__stars_second"></div>
+            <div className="main__stars_third"></div>
+            <div className="main__comet">
+              <div className="main__comet-shell">
+                <div className="main__glowing-ball"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          className="illustration"
+          src={spaceBublle1}
+          id="spaceBublle1"
+          alt="иллюстрация"
+        />
+        <img
+          className="illustration"
+          src={children}
+          id="children"
+          alt="иллюстрация"
+        />
         <h1 className="main__title">Юношеский Клуб Космонавтики</h1>
-        <button className="main__button"><p className="main__button-text"> Записаться</p></button>
+        <button className="main__button">
+          <p className="main__button-text"> Записаться</p>
+        </button>
       </section>
-       <section className="club">
+      <section className="club">
         <h2 className="club__title">О Клубе</h2>
         <div className="club__content">
           <div className="club__text-box">
             <p className="club__text">
-              В клуб принимаются учащиеся <span className="club__span">7-10 классов (обучение на бюджетной
-              основе).</span> Комплексная образовательная программа клуба рассчитана на
-              3 года. По окончании учащиеся получают «Свидетельство о
-              дополнительном образовании».
+              В клуб принимаются учащиеся{" "}
+              <span className="club__span">
+                7-10 классов (обучение на бюджетной основе).
+              </span>{" "}
+              Комплексная образовательная программа клуба рассчитана на 3 года.
+              По окончании учащиеся получают «Свидетельство о дополнительном
+              образовании».
             </p>
             <p className="club__text">
               На базе клуба ежегодно проводится Открытая Санкт-Петербургская
@@ -52,31 +77,33 @@ const Main = () => {
             <p className="club__text">
               Для школьных команд 6-7 классов Юношеский Клуб космонавтики в
               апреле проводит ежегодную познавательную игру по станциям
-              «Космос». <span className="club__span">Заявки на игру принимаются по тел.: 407 43 55. Участие
-              бесплатное</span>
+              «Космос».{" "}
+              <span className="club__span">
+                Заявки на игру принимаются по тел.: 407 43 55. Участие
+                бесплатное
+              </span>
             </p>
           </div>
-          <div className=" club__media-nav-box" >
-           <Slider mediaArray={img}/>
+          <div className=" club__media-nav-box">
+            <Slider mediaArray={img} />
             {/* <video className="club__video" />
             <video className="club__video" />
             <video className="club__video" />
             <video className="club__video" /> */}
-         
-          <div className="nav">
-            <img className="nav__point" alt='иллюстрация' src={ellipse}/>
-            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
-            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
-            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
-            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
-            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
-            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
-            <img className="nav__point"alt='иллюстрация' src={ellipse}/>
-          </div>
+
+            <div className="nav">
+              <img className="nav__point" alt="иллюстрация" src={ellipse} />
+              <img className="nav__point" alt="иллюстрация" src={ellipse} />
+              <img className="nav__point" alt="иллюстрация" src={ellipse} />
+              <img className="nav__point" alt="иллюстрация" src={ellipse} />
+              <img className="nav__point" alt="иллюстрация" src={ellipse} />
+              <img className="nav__point" alt="иллюстрация" src={ellipse} />
+              <img className="nav__point" alt="иллюстрация" src={ellipse} />
+              <img className="nav__point" alt="иллюстрация" src={ellipse} />
+            </div>
           </div>
         </div>
       </section>
-     
       <section className="history">
         <h2 className="history__title">Наша история и гордость</h2>
         <p className="history__subtitle">
@@ -88,46 +115,51 @@ const Main = () => {
           России, капитан 1 ранга, акванавт
         </p>
         <div className="cards">
-                    {heroes.map((card)=>{
-                      return <Card
-                            data={card}/>
-                    })}
-                        </div>
-                  
-       <Slider mediaArray={img}/>
+          {heroes.map((card) => {
+            return <Card data={card} />;
+          })}
+        </div>
+
+        <Slider mediaArray={img} />
         {/* <div className="history__media-box">
           <video className="history__video" />
           <video className="history__video" />
           <video className="history__video" />
         </div> */}
         <div className="nav">
-            <img className="nav__point" alt='иллюстрация' src={ellipse}/>
-            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
-            <img className="nav__point" alt='иллюстрация'src={ellipse}/>
-          </div>
-        <img className="history__arrow history__arrow_left" alt='иллюстрация' src={arrorRight}/>
-        <img className="history__arrow history__arrow_right" alt='иллюстрация'src={arrorLeft}/>
+          <img className="nav__point" alt="иллюстрация" src={ellipse} />
+          <img className="nav__point" alt="иллюстрация" src={ellipse} />
+          <img className="nav__point" alt="иллюстрация" src={ellipse} />
+        </div>
+        <img
+          className="history__arrow history__arrow_left"
+          alt="иллюстрация"
+          src={arrorRight}
+        />
+        <img
+          className="history__arrow history__arrow_right"
+          alt="иллюстрация"
+          src={arrorLeft}
+        />
       </section>
       <section className="teachers">
         <h2 className="teachers__title">Педагоги</h2>
         <div className="teachers__card-box">
           <div className="teachers__main-card-box">
-          <div className="cards">
-                    {mainTeachers.map((card)=>{
-                      return <Card
-                            data={card}/>
-                    })}
-                        </div>
-                        <div className="cards">
-                    {teachers.map((card)=>{
-                      return <Card
-                            data={card}/>
-                    })}
-                        </div>
+            <div className="cards">
+              {mainTeachers.map((card) => {
+                return <Card data={card} />;
+              })}
+            </div>
+            <div className="cards">
+              {teachers.map((card) => {
+                return <Card data={card} />;
+              })}
+            </div>
           </div>
-         
         </div>
-      </section> {/*
+      </section>{" "}
+      {/*
       <section className="courses">
         <h2 className="courses__title">Курсы</h2>
         <ul className="courses__text-box">

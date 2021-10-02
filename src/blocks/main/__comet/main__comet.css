@@ -1,0 +1,15 @@
+.main__comet {
+  background-image: url(../../../images/kometa_osnovnaya_chast.png);
+  background-size: contain;
+  margin: 0;
+
+  width: 250px;
+  height: 200px;
+  offset-path: path("M668.5 1L0.5 466.5");
+  transition: move 5s linear initial;
+}
+@keyframes move {
+  100% {
+    offset-distance: 100%;
+  }
+}
