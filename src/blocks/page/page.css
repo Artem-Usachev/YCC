@@ -1,13 +1,12 @@
-    .page {
-        min-width: 320px;
-        max-width: 1920px;
-        position: relative;
-        font-family: Roboto;
-        box-sizing: border-box;
-        margin: 0 auto;
-        padding: 0;
-        position: relative;
-        color: #123B9E;
-        outline: none;
-        overflow: hidden;
-    }
+.page {
+  min-width: 320px;
+  overflow: hidden;
+  position: relative;
+  font-family: Roboto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  color: #123b9e;
+  outline: none;
+}

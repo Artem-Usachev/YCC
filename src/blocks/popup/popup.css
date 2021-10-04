@@ -1,0 +1,18 @@
+.popup {
+  background: linear-gradient(222.52deg, #1d1d96 -2.31%, #036aa8 56.04%);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  min-width: 320px;
+  margin: 0 auto;
+  z-index: 50000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s linear;
+}
