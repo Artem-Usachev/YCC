@@ -1,6 +1,5 @@
 .main__background-shell {
-  width: 100%;
-  position: relative;
-  width: 789px;
-  height: 1016px;
+    width: 100%;
+    position: relative;
+    height: 100%;
 }

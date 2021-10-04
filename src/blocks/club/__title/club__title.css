@@ -2,5 +2,26 @@
     font-weight: 600;
     font-size: 48px;
     margin: 0 auto;
-    width: 197px;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1695px) {
+    .club__title {
+        font-size: 36px;
+        line-height: 57px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .club__title {
+        font-size: 24px;
+        line-height: 38px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .club__title {
+        font-size: 22px;
+        line-height: 35px;
+    }
 }

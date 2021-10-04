@@ -1,0 +1,39 @@
+.footer__link {
+    display: flex;
+    color: #123B9E;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 600;
+    transition: 1s ease all;
+    justify-content: center;
+    margin: 0 0 0 40px;
+}
+
+#YouTube {
+    margin: 0;
+}
+
+.footer__link:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1695px) {
+    .footer__link {
+        margin: 0 0 0 40px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .footer__link {
+        margin: 0 0 0 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer__link {
+        margin: 0 0 0 15px;
+    }
+}

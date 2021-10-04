@@ -8,16 +8,16 @@ useEffect(() => {
             const res = current === mediaArray.length - 1 ? 0 : current + 1 
             return res
         })
-    }, 7000)
+    }, 7500)
     return () => clearInterval()
 }, [])
- 
+
 const prevImgIndex = activeIndex ? activeIndex - 1 : mediaArray.length - 1
 const nextImgIndex = activeIndex === mediaArray.length - 1 ? 0 : activeIndex + 1
 return (
     <div className="club__media-box">
-    <div className="club__backdrop"></div>
-
+    <div className="backdrop"></div>
+    
   <div className="slider-img slider-img-prev"
       key={prevImgIndex}>
   {mediaArray[prevImgIndex]}

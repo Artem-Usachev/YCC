@@ -3,3 +3,21 @@
     bottom: 300px;
     right: 390px;
 }
+
+@media screen and (max-width: 1742px) {
+    .history__arrow_left {
+        right: 190px;
+    }
+}
+
+@media screen and (max-width: 1695px) {
+    .history__arrow_left {
+        bottom: 190px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .history__arrow_left {
+        right: 90px;
+    }
+}

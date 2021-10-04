@@ -6,4 +6,33 @@
     width: 673px;
     padding: 349px 0 0 133px;
     margin: 0;
+    -webkit-text-stroke: 1px white;
+}
+
+@media screen and (max-width: 1695px) {
+    .main__title {
+        font-size: 50px;
+        line-height: 78px;
+        width: 467px;
+        padding: 263px 0 0 84px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .main__title {
+        font-size: 40px;
+        line-height: 62px;
+        width: 311px;
+        ;
+        padding: 215px 0 0 60px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main__title {
+        font-size: 33px;
+        line-height: 51px;
+        width: 257px;
+        padding: 276px 0 0 33px;
+    }
 }

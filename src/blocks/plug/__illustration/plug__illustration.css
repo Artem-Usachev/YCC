@@ -1,0 +1,47 @@
+@keyframes cometa {
+    from {
+        top: -30%;
+        right: -30%;
+    }
+    to {
+        top: 100%;
+        right: 90%;
+    }
+}
+
+@keyframes shell {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.plug__illustration {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    background-image: url(../../../images/kometa.png);
+    background-size: contain;
+    top: 0;
+    right: 0;
+    animation: cometa 5s infinite;
+    z-index: -2;
+}
+
+.plug__border {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.plug__comet-shell {
+    position: absolute;
+    bottom: -10px;
+    left: -13px;
+    animation: shell 5s infinite;
+}

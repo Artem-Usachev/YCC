@@ -1,0 +1,29 @@
+.teachers__card-main-teachers-title {
+    font-size: 14px;
+    line-height: 22px;
+    bottom: 0;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1695px) {
+    .teachers__card-main-teachers-title {
+        font-size: 12px;
+        line-height: 16px;
+        left: 15px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .teachers__card-main-teachers-title {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .teachers__card-main-teachers-title {
+        font-size: 10px;
+        line-height: 15px;
+        left: 10px;
+    }
+}

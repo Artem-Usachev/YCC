@@ -1,0 +1,26 @@
+.history__cards {
+    grid-template-columns: repeat(3, minmax(242px, 242px));
+    margin: 70px auto;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1695px) {
+    .history__cards {
+        grid-template-columns: repeat(3, minmax(180px, 180px));
+        margin: 35px auto;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .history__cards {
+        grid-template-columns: repeat(3, minmax(194px, 194px));
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .history__cards {
+        grid-template-columns: repeat(2, minmax(145px, 145px));
+        margin: 35px auto;
+    }
+}

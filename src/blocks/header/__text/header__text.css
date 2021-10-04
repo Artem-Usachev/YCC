@@ -9,23 +9,26 @@
     border-bottom: 1px solid #123B9E;
 }
 
-.header__text:first-child {
-    margin: 0;
-    border-bottom: 1px solid #123B9E;
-}
-
-.header__text:nth-child(3n) {
-    color: white;
-}
-
-.header__text:nth-child(4n) {
-    color: white;
-}
-
-.header__text:nth-child(5n) {
-    color: white;
-}
-
 .header__text:last-child {
     margin-right: 210px;
+}
+
+@media screen and (max-width: 1695px) {
+    .header__text {
+        margin-left: 50px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__text {
+        margin-left: 50px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .header__text {
+        display: none;
+    }
 }

@@ -1,0 +1,30 @@
+.contacts__semi-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 31px;
+    margin: 5px 0 5px auto;
+}
+
+#contacts__semi-title {
+    margin: 0 0 5px auto;
+}
+
+@media screen and (max-width: 1695px) {
+    .contacts__semi-title {
+        font-size: 13px;
+        line-height: 17px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .contacts__semi-title {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+        text-align: start;
+        margin-top: 15px;
+    }
+    #contacts__semi-title {
+        margin: 0;
+    }
+}

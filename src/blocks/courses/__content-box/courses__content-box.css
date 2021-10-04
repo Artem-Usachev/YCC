@@ -1,0 +1,13 @@
+.courses__content-box {
+    display: flex;
+    margin: 90px auto 0;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1065px) {
+    .courses__content-box {
+        flex-direction: column;
+        margin: 40px auto 0;
+        padding: 0 25px;
+    }
+}

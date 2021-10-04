@@ -1,0 +1,31 @@
+.courses__semi-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 5px 0 5px auto;
+    width: max-content;
+}
+
+#semi-title-first {
+    margin: 0 0 5px auto;
+}
+
+@media screen and (max-width: 1695px) {
+    .courses__semi-title {
+        font-size: 13px;
+        line-height: 17px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .courses__semi-title {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+        text-align: start;
+        margin-top: 15px;
+    }
+    #semi-title-first {
+        margin: 0;
+    }
+}

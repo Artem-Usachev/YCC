@@ -1,3 +1,21 @@
 .club__media-nav-box {
     margin: 0 0 0 125px;
 }
+
+@media screen and (max-width: 1695px) {
+    .club__media-nav-box {
+        margin: 0 0 0 22px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .club__media-nav-box {
+        margin: 40px auto 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .club__media-nav-box {
+        margin: 35px auto 0;
+    }
+}

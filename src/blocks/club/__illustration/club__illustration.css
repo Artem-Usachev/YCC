@@ -1,6 +1,7 @@
 .club__illustration {
     width: 764px;
     height: 538px;
+    transition: 1s ease all;
 }
 
 .slider-img-prev {
@@ -13,9 +14,31 @@
 
 .slider-img {
     position: absolute;
-    width: 764px;
-    height: 538px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
     top: 0;
     right: 0;
     transition: all 4s;
+}
+
+@media screen and (max-width: 1695px) {
+    .club__illustration {
+        width: 457px;
+        height: 322px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .club__illustration {
+        width: 714px;
+        height: 504.83px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .club__illustration {
+        width: 326px;
+        height: 230px;
+    }
 }

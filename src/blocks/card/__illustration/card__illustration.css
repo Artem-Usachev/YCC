@@ -3,3 +3,24 @@
     height: 242px;
     border-radius: 20px;
 }
+
+@media screen and (max-width: 1695px) {
+    .card__illustration {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .card__illustration {
+        width: 194px;
+        height: 194px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card__illustration {
+        width: 145px;
+        height: 145px;
+    }
+}

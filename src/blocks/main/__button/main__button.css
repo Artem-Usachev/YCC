@@ -2,11 +2,11 @@
     position: absolute;
     width: 347px;
     height: 66px;
-    left: 297px;
-    top: 764px;
+    left: 210px;
+    bottom: 264px;
     background: linear-gradient(0deg, rgba(3, 106, 168, 0.57), rgba(3, 106, 168, 0.57)), #123B9E;
     border-radius: 20px;
-    border: none;
+    border: 1px solid white;
     transition: all 0.8s ease-out;
     outline: none;
 }
@@ -19,4 +19,50 @@
 
 .main__button:active {
     opacity: 0.8;
+}
+
+@media screen and (max-width: 1695px) {
+    .main__button {
+        width: 249px;
+        height: 53px;
+        left: 150px;
+        bottom: 350px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .main__button {
+        width: 300px;
+        height: 46px;
+        left: 5%;
+        bottom: 35%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .main__button {
+        width: 300px;
+        height: 46px;
+        left: 5%;
+        bottom: 50%;
+    }
+}
+
+
+/* @media screen and (max-width: 1000px) {
+    .main__button {
+        width: 300px;
+        height: 46px;
+        left: 5%;
+        bottom: 35%;
+    }
+} */
+
+@media screen and (max-width: 750px) {
+    .main__button {
+        width: 249px;
+        height: 50px;
+        left: 18%;
+        bottom: 10px;
+    }
 }

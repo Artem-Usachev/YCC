@@ -1,0 +1,21 @@
+.courses__text-box {
+    width: fit-content;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1695px) {
+    .courses__title {
+        font-size: 36px;
+        line-height: 57px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .courses__text-box {
+        margin: 0 auto;
+        text-align: start;
+    }
+}

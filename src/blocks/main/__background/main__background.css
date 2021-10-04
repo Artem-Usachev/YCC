@@ -1,9 +1,33 @@
 .main__background {
-  background-image: url(../../../images/kosmos_osnovnaya_chast.png);
-  width: 789px;
-  height: 1016px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -10;
+    background-image: url(../../../images/kosmos_osnovnaya_chast.png);
+    width: 789px;
+    height: 1016px;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    z-index: -10;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1695px) {
+    .main__background {
+        width: 650px;
+        height: 833px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .main__background {
+        width: 415px;
+        height: 532px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main__background {
+        width: 300px;
+        height: 386.28px;
+    }
 }

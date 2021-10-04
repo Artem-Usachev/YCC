@@ -1,12 +1,11 @@
 import React from "react";
 
-const Card = ( {data} ) => {
-  console.log(data.link)
+const Card = ( {data , className} ) => {
   return (
     <div className="card">
-          <div className="club__backdrop"></div>
+          <div className="backdrop"></div>
       <img className="card__illustration" src={data.link} alt={data.name} />
-      <h3 className="card__title">{data.name}</h3>
+      <h3 className={`card__title ${className}`}>{data.name}<br/>{data.post}</h3>
     </div>
   );
 };

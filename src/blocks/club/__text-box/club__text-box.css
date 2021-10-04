@@ -1,3 +1,22 @@
 .club__text-box {
     width: 764px;
 }
+
+@media screen and (max-width: 1695px) {
+    .club__text-box {
+        width: 543px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .club__text-box {
+        width: 714px;
+        padding: 0 33px 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .club__text-box {
+        width: 309px;
+    }
+}

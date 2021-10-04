@@ -10,12 +10,38 @@
     overflow: hidden;
 }
 
-.club__media-box:hover .slider-img {
+.club__media-box:hover {
+    cursor: pointer;
+}
+
+.club__media-box:hover .club__illustration {
     transform: scale(1.1);
 }
 
-.club__media-box:hover .club__backdrop {
+.club__media-box:hover .backdrop {
     cursor: pointer;
     opacity: 0.3;
     z-index: 10;
+}
+
+@media screen and (max-width: 1695px) {
+    .club__media-box {
+        width: 457px;
+        height: 322px;
+    }
+}
+
+@media screen and (max-width:1065px) {
+    .club__media-box {
+        width: 714px;
+        height: 504.83px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .club__media-box {
+        width: 326px;
+        height: 230px;
+        margin: 0 auto;
+    }
 }

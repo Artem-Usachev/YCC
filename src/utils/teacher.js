@@ -12,15 +12,18 @@
      }
  ]
  export const mainTeachers = [{
-         name: 'Ронкина А.Ю.Руководотель клуба',
+         name: 'Ронкина А.Ю.',
+         post: 'Руководотель клуба',
          link: 'https://3.downloader.disk.yandex.ru/preview/480a29a81e981653574a124ccb55d4965a5c0d29ef2606be6417645cd255ba17/inf/BDsRdf0EV_zWkXu-FWydyNXePNJQkAExZzfSNqDc2agiwYILuxXC02tCnHbuums87MksvIltaqev5fH6L1GC2g%3D%3D?uid=1492330071&filename=Ронкина.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=1492330071&tknv=v2&size=1903x974'
      },
      {
-         name: 'Жуковский В.Ф.Научный руководитель ',
+         name: 'Жуковский В.Ф.',
+         post: 'Научный руководитель ',
          link: 'https://3.downloader.disk.yandex.ru/preview/eec429ff4ea4bfef39320530c0fd8c1bf8372891e7852c52eaf925d2e6e5ae22/inf/wgfdpQ2OT-cDS81RFdegttXePNJQkAExZzfSNqDc2ahg-ma8iqdwD1GwPHuMcF6KM5I0wYUGzL9xk4tLFUO22w%3D%3D?uid=1492330071&filename=Жуковский.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=1492330071&tknv=v2&size=1903x974'
      },
      {
-         name: 'Жуковская И.Я.Заведущая лабораторией',
+         name: 'Жуковская И.Я.',
+         post: 'Заведущая лабораторией',
          link: 'https://1.downloader.disk.yandex.ru/preview/45647158adf612c54d2e03a5bac116d521a5ea8f49256a7e12be4da3dc3abd15/inf/_SA_A_M9RhAEe63Ai_9h8dXePNJQkAExZzfSNqDc2ai7KVU8_qhTUldzHDRndVUMpMaB97xB9IDRdHBB6pxURg%3D%3D?uid=1492330071&filename=Жуковская.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=1492330071&tknv=v2&size=1903x974'
      },
  ]

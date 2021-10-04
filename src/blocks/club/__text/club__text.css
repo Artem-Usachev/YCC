@@ -4,3 +4,19 @@
     margin: 0 0 40px;
     text-align: right;
 }
+
+@media screen and (max-width: 1695px) {
+    .club__text {
+        font-size: 13px;
+        line-height: 20px;
+        margin: 0 0 30px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .club__text {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: start;
+    }
+}

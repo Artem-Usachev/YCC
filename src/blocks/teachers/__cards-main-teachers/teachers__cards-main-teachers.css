@@ -1,0 +1,26 @@
+.teachers__cards-main-teachers {
+    grid-template-columns: repeat(3, minmax(242px, 242px));
+    column-gap: 17px;
+    margin: 70px auto 20px;
+}
+
+@media screen and (max-width: 1695px) {
+    .teachers__cards-main-teachers {
+        grid-template-columns: repeat(3, minmax(180px, 180px));
+        margin: 35px auto 20px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .teachers__cards-main-teachers {
+        grid-template-columns: repeat(3, minmax(194px, 194px));
+        margin: 20px auto 60px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .teachers__cards-main-teachers {
+        grid-template-columns: repeat(2, minmax(145px, 145px));
+        margin: 35px auto 50px;
+    }
+}

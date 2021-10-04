@@ -3,3 +3,16 @@
     margin: 58px auto 0;
     width: max-content;
 }
+
+@media screen and (max-width: 1065px) {
+    .club__content {
+        margin: 28px auto 0;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .club__content {
+        margin: 24px auto 0;
+    }
+}

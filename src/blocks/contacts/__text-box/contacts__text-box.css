@@ -1,0 +1,29 @@
+.contacts__text-box {
+    width: fit-content;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1695px) {
+    .courses__title {
+        width: 430px;
+        font-size: 36px;
+        line-height: 57px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .contacts__text-box {
+        margin: 0 0 40px;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .courses__title {
+        font-size: 22px;
+        line-height: 35px;
+    }
+}

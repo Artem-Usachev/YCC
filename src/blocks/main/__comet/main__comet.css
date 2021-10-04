@@ -1,15 +1,22 @@
-.main__comet {
-  background-image: url(../../../images/kometa_osnovnaya_chast.png);
-  background-size: contain;
-  margin: 0;
-
-  width: 250px;
-  height: 200px;
-  offset-path: path("M668.5 1L0.5 466.5");
-  transition: move 5s linear initial;
+@keyframes comet {
+    for {
+        top: -30%;
+        right: -30%;
+    }
+    to {
+        top: 90%;
+        right: 220%;
+    }
 }
-@keyframes move {
-  100% {
-    offset-distance: 100%;
-  }
+
+.main__comet {
+    background-image: url(../../../images/kometa_osnovnaya_chast.png);
+    background-size: contain;
+    margin: 0;
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 0;
+    right: 0;
+    /* animation: comet 5s infinite; */
 }
