@@ -1,6 +1,6 @@
 .main__background {
-    background-image: url(../../../images/kosmos_osnovnaya_chast.png);
-    width: 789px;
+    background-image: url(../../../images/background.png);
+    width: 819px;
     height: 1016px;
     position: absolute;
     background-size: cover;
@@ -11,10 +11,10 @@
     overflow: hidden;
 }
 
-@media screen and (max-width: 1695px) {
+@media screen and (max-width: 1400px) {
     .main__background {
-        width: 650px;
-        height: 833px;
+        width: 550px;
+        height: 733px;
     }
 }
 

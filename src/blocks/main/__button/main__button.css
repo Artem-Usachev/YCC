@@ -1,7 +1,7 @@
 .main__button {
-    position: absolute;
     width: 347px;
     height: 66px;
+    margin: 100px 133px 0;
     left: 210px;
     bottom: 264px;
     background: linear-gradient(0deg, rgba(3, 106, 168, 0.57), rgba(3, 106, 168, 0.57)), #123B9E;
@@ -21,12 +21,9 @@
     opacity: 0.8;
 }
 
-@media screen and (max-width: 1695px) {
+@media screen and (max-width: 1495px) {
     .main__button {
-        width: 249px;
-        height: 53px;
-        left: 150px;
-        bottom: 350px;
+        margin: 100px 84px 0;
     }
 }
 
@@ -34,7 +31,7 @@
     .main__button {
         width: 300px;
         height: 46px;
-        left: 5%;
+        left: 120px;
         bottom: 35%;
     }
 }
@@ -42,14 +39,15 @@
 @media screen and (max-width: 1025px) {
     .main__button {
         width: 300px;
-        height: 46px;
-        left: 5%;
-        bottom: 50%;
+        height: 60px;
+        left: 60px;
+        bottom: 450px;
     }
 }
 
 
-/* @media screen and (max-width: 1000px) {
+/* 
+@media screen and (max-width: 1000px) {
     .main__button {
         width: 300px;
         height: 46px;
@@ -62,7 +60,9 @@
     .main__button {
         width: 249px;
         height: 50px;
-        left: 18%;
+        margin: 0;
+        left: 20%;
         bottom: 10px;
+        position: absolute;
     }
 }

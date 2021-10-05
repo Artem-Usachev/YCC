@@ -7,3 +7,21 @@
     z-index: 10650;
     top: 0;
 }
+
+@media screen and (max-width: 1695px) {
+    .header {
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .header {
+        height: 40px;
+    }
+}

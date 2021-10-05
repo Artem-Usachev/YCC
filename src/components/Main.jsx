@@ -10,15 +10,16 @@ import arrorRight from "../images/arrowR.svg";
 import arrorLeft from "../images/arrowL.svg";
 import ellipse from "../images/Ellipse.svg";
 import Slider from "./Slider";
-import cloud1 from "../images/облако1.png";
+import cloud1 from "../images/rocket.png";
 import cloud2 from "../images/облако2.png";
 import cloud3 from "../images/облако3.png";
-import cloud4 from "../images/облако4.png";
+import cloud4 from "../images/bubble.png";
 import cloud5 from "../images/облако5.png";
 import cloud6 from "../images/облако6.png";
 import buble from "../images/шар.png";
 import EditProfilePopup from "./PopupWithForm";
 import rocket from "../images/ракета.png";
+
 import { heroes, teachers, mainTeachers } from "../utils/teacher";
 const Main = () => {
   const img = [
@@ -55,12 +56,13 @@ const Main = () => {
           id="spaceBublle1"
           alt="иллюстрация"
         />
-        <img
+     <img
           className="illustration"
           src={children}
           id="children"
           alt="иллюстрация"
         />
+        
         <h1 className="main__title">Юношеский Клуб Космонавтики</h1>
         <button className="main__button" onClick={handleEditProfileClick}>
           <p className="main__button-text"> Записаться</p>
@@ -106,11 +108,6 @@ const Main = () => {
           </div>
           <div className=" club__media-nav-box">
             <Slider mediaArray={img} />
-            {/* <video className="club__video" />
-            <video className="club__video" />
-            <video className="club__video" />
-            <video className="club__video" /> */}
-
             <div className="nav">
               <img className="nav__point" alt="иллюстрация" src={ellipse} />
               <img className="nav__point" alt="иллюстрация" src={ellipse} />
@@ -125,9 +122,9 @@ const Main = () => {
         </div>
       </section>
       <section className="history">
-        {/* <img className="illustration" src={cloud2} id='cloud2' alt='иллюстрация'/>
+        <img className="illustration" src={cloud2} id='cloud2' alt='иллюстрация'/>
       <img className="illustration" src={cloud1} id='cloud1' alt='иллюстрация'/>
-      <img className="illustration" src={rocket} id='rocket'alt='иллюстрация'/> */}
+
         <h2 className="history__title">Наша история и гордость</h2>
         <p className="history__subtitle">
           Юношеский клуб космонавтики основан в 1961 году. Является старейшим в
@@ -144,11 +141,6 @@ const Main = () => {
         </div>
 
         <Slider mediaArray={img} />
-        {/* <div className="history__media-box">
-          <video className="history__video" />
-          <video className="history__video" />
-          <video className="history__video" />
-        </div> */}
         <div className="nav">
           <img className="nav__point" alt="иллюстрация" src={ellipse} />
           <img className="nav__point" alt="иллюстрация" src={ellipse} />
@@ -167,9 +159,9 @@ const Main = () => {
       </section>
 
       <section className="teachers">
-        {/* <img className="illustration" src={cloud3} id='cloud3' alt='иллюстрация'/>
+        <img className="illustration" src={cloud3} id='cloud3' alt='иллюстрация'/>
       <img className="illustration" src={cloud4} id='cloud4' alt='иллюстрация'/>
-      <img className="illustration" src={buble}id='buble' alt='иллюстрация'/> */}
+    
         <h2 className="teachers__title">Педагоги</h2>
         <div className="teachers__card-box">
           <div className="teachers__main-card-box">
@@ -193,8 +185,8 @@ const Main = () => {
       </section>
 
       <section className="courses">
-        {/* <img className="illustration" src={cloud5} id='cloud5' alt='иллюстрация'/>
-        <img className="illustration" src={cloud6} id='cloud6' alt='иллюстрация'/> */}
+        <img className="illustration" src={cloud5} id='cloud5' alt='иллюстрация'/>
+        <img className="illustration" src={cloud6} id='cloud6' alt='иллюстрация'/>
         <h2 className="courses__title">Курсы</h2>
         <div className="courses__content-box">
           <ul className="courses__text-box">

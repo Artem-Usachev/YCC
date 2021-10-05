@@ -8,13 +8,6 @@
     outline: none
 }
 
-@media screen and (max-width: 1695px) {
-    .main__button-text {
-        font-size: 27px;
-        line-height: 42px;
-    }
-}
-
 @media screen and (max-width: 1065px) {
     .main__button-text {
         font-size: 24px;

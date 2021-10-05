@@ -138,7 +138,9 @@
 @import url(./blocks/plug/__box/plug__box.css);
 @import url(./blocks/plug/__illustration/plug__illustration.css);
 @import url(./blocks/plug/__stars/plug__stars.css);
+
 /*  */
+
 @import url(./blocks/popup/popup.css);
 @import url(./blocks/popup/__text/popup__text.css);
 @import url(./blocks/popup/__button/popup__button.css);
@@ -153,28 +155,34 @@
 @import url(./blocks/popup/__error/popup__error.css);
 @import url(./blocks/popup/__button/_condition/popup__button_condition_active.css);
 @import url(./blocks/invisible/invisible.css);
+
 /*  */
+
 @import url(./blocks/text-error/text-error.css);
 p {
-  /**
+    /**
      * Для эксплорера
      */
-  -ms-user-select: none;
-  /**
+    -ms-user-select: none;
+    /**
      * Для мозилы
      */
-  -moz-user-select: none;
-  /**
+    -moz-user-select: none;
+    /**
      * Для конкверора
      */
-  -khtml-user-select: none;
-  /**
+    -khtml-user-select: none;
+    /**
      * Для Сафари и Хрома
      */
-  user-select: none;
-  -webkit-text-stroke: 0.1px white;
+    user-select: none;
+    -webkit-text-stroke: 0.1px white;
 }
 
 button:focus {
-  outline: 0;
+    outline: 0;
+}
+
+h2 {
+    -webkit-text-stroke: 0.2px white;
 }
