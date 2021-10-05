@@ -25,7 +25,7 @@ function App() {
       </div>
 
       <Header />
-      <Main />
+      <Main id="1" />
       <Footer />
     </div>
   );

@@ -56,13 +56,13 @@ const Main = () => {
           id="spaceBublle1"
           alt="иллюстрация"
         />
-     <img
+        <img
           className="illustration"
           src={children}
           id="children"
           alt="иллюстрация"
         />
-        
+
         <h1 className="main__title">Юношеский Клуб Космонавтики</h1>
         <button className="main__button" onClick={handleEditProfileClick}>
           <p className="main__button-text"> Записаться</p>
@@ -122,8 +122,18 @@ const Main = () => {
         </div>
       </section>
       <section className="history">
-        <img className="illustration" src={cloud2} id='cloud2' alt='иллюстрация'/>
-      <img className="illustration" src={cloud1} id='cloud1' alt='иллюстрация'/>
+        <img
+          className="illustration"
+          src={cloud2}
+          id="cloud2"
+          alt="иллюстрация"
+        />
+        <img
+          className="illustration"
+          src={cloud1}
+          id="cloud1"
+          alt="иллюстрация"
+        />
 
         <h2 className="history__title">Наша история и гордость</h2>
         <p className="history__subtitle">
@@ -159,9 +169,19 @@ const Main = () => {
       </section>
 
       <section className="teachers">
-        <img className="illustration" src={cloud3} id='cloud3' alt='иллюстрация'/>
-      <img className="illustration" src={cloud4} id='cloud4' alt='иллюстрация'/>
-    
+        <img
+          className="illustration"
+          src={cloud3}
+          id="cloud3"
+          alt="иллюстрация"
+        />
+        <img
+          className="illustration"
+          src={cloud4}
+          id="cloud4"
+          alt="иллюстрация"
+        />
+
         <h2 className="teachers__title">Педагоги</h2>
         <div className="teachers__card-box">
           <div className="teachers__main-card-box">
@@ -185,8 +205,18 @@ const Main = () => {
       </section>
 
       <section className="courses">
-        <img className="illustration" src={cloud5} id='cloud5' alt='иллюстрация'/>
-        <img className="illustration" src={cloud6} id='cloud6' alt='иллюстрация'/>
+        <img
+          className="illustration"
+          src={cloud5}
+          id="cloud5"
+          alt="иллюстрация"
+        />
+        <img
+          className="illustration"
+          src={cloud6}
+          id="cloud6"
+          alt="иллюстрация"
+        />
         <h2 className="courses__title">Курсы</h2>
         <div className="courses__content-box">
           <ul className="courses__text-box">
