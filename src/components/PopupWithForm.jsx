@@ -1,16 +1,25 @@
-import { useContext, useEffect, useState } from "react";
+import { useState } from "react";
 import PopupWithForm from "./PopupForm";
 
 export default function EditProfilePopup({ isOpen, onClose, onUpdateUser }) {
+ 
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const [number, setNumber] = useState('')
+  const [email, setEmail] = useState('')
   const handleSubmit = (e) => {
     e.preventDefault();
-    onUpdateUser(name, description);
+    onUpdateUser(name,number,email, description);
   };
 
   const handleChangeName = (e) => {
     setName(e.target.value);
+  };
+  const handleChangeNumber = (e) => {
+    setNumber(e.target.value);
+  };
+  const handleChangeEmail = (e) => {
+    setEmail(e.target.value);
   };
 
   const handleChangeDescription = (e) => {
@@ -44,8 +53,8 @@ export default function EditProfilePopup({ isOpen, onClose, onUpdateUser }) {
           name="about"
           placeholder="Телефон"
           required
-          onChange={handleChangeDescription}
-          value={description}
+          onChange={handleChangeNumber}
+          value={number}
         />
         <input
           type="text"
@@ -53,6 +62,17 @@ export default function EditProfilePopup({ isOpen, onClose, onUpdateUser }) {
           className="popup__text popup__user-info"
           name="about"
           placeholder="E-maile"
+          required
+          onChange={handleChangeEmail}
+          value={email}
+        />
+         <input
+          type="text"
+          id="user-info"
+          className="popup__text popup__user-description"
+          name="about"
+          rows="111"
+          placeholder='Напишите о себе (своем ребёнке): &#10; класс, чем увлекается, и мы обязательно напишем вам в ответ!'
           required
           onChange={handleChangeDescription}
           value={description}

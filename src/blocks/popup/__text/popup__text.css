@@ -4,10 +4,38 @@
     outline: none;
     border: none;
     max-width: 358px;
-    width: 100%;
     padding-bottom: 13px;
+    white-space: pre-wrap;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     margin: 30px 36px 0;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    white-space: pre-line;
+    position: relative;
+    top: 0;
+}
+
+ ::-moz-placeholder {
+    /* Firefox 19+ */
+    white-space: pre-line;
+    position: relative;
+    top: 0;
+}
+
+ :-ms-input-placeholder {
+    /* IE 10+ */
+    white-space: pre-line;
+    position: relative;
+    top: 0;
+}
+
+ :-moz-placeholder {
+    /* Firefox 18- */
+    white-space: pre-line;
+    position: relative;
+    top: 0;
 }
 
 @media screen and (max-width: 539px) {
@@ -15,4 +43,8 @@
         margin: 30px 22px 0;
         max-width: 238px;
     }
+}
+
+.popup__user-description {
+    height: 100px;
 }

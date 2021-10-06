@@ -5,6 +5,7 @@ import Main from "./Main";
 import shell from "../images/kometa_svechenie.png";
 
 function App() {
+  
   return (
     <div className="page">
       <div className="plug">

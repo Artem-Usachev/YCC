@@ -32,7 +32,6 @@ const Header = () => {
           menuText4.style.color = "white";
           if (window.screen.width <= 1066) {
             menuText3.style.color = "#123b9e";
-
             if (window.screen.width <= 887) {
               menuText3.style.color = "white";
             }

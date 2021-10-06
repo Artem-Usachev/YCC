@@ -19,9 +19,22 @@ import cloud6 from "../images/облако6.png";
 import buble from "../images/шар.png";
 import EditProfilePopup from "./PopupWithForm";
 import rocket from "../images/ракета.png";
+import ivanova from '../images/ivanova.png'
+import borisenko from '../images/borisenko.png'
+import { teachers, mainTeachers } from "../utils/teacher";
 
-import { heroes, teachers, mainTeachers } from "../utils/teacher";
 const Main = () => {
+  const heroes = [{
+    name: 'Иванова Е.А.',
+    link: ivanova
+},
+{
+    name: 'Борисенко А.И.',
+    link: borisenko},
+{
+    name: 'Храмов А.Г.',
+    link: 'https://2.downloader.disk.yandex.ru/preview/e4a27dd129d2437891d25f1a16b19a8e8ecabf875d6b4e41a85b83a4b790ccc5/inf/GY4Kiu9dAYerBua4Og3r39XePNJQkAExZzfSNqDc2ag42QBZaxy3DSshaa_Ce7S2FwgaJ-MEPMbYMeaWlNxu6g%3D%3D?uid=1492330071&filename=Храмов.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=1492330071&tknv=v2&size=1903x974'
+}]
   const img = [
     <img className="club__illustration" key={club1} src={club1} />,
     <img className="club__illustration" key={club2} src={club2} />,
@@ -35,6 +48,7 @@ const Main = () => {
   const handleEditProfileClick = () => {
     setIsEditProfilePopupOpen(true);
   };
+  
   return (
     <>
       <section className="main">
@@ -71,6 +85,7 @@ const Main = () => {
       <EditProfilePopup
         isOpen={isEditProfilePopupOpen}
         onClose={closeAllPopup}
+       
       />
       <section className="club">
         <h2 className="club__title">О Клубе</h2>
